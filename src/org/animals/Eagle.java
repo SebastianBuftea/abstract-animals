@@ -1,6 +1,6 @@
 package org.animals;
 
-public class Eagle extends Animal{
+public class Eagle extends Animal implements Volare{
     public Eagle(String name) {
         super(name);
     }
@@ -14,5 +14,12 @@ public class Eagle extends Animal{
     public String[] geteat() throws IllegalArgumentException {
         String[] eat={"pesci","lucertole","topi"};
         return eat;
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("volo");
+
+
     }
 }

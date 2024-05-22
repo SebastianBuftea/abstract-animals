@@ -1,6 +1,6 @@
 package org.animals;
 
-public class Dolphin extends Animal{
+public class Dolphin extends Animal implements Nuotare{
 
 
     public Dolphin(String name) {
@@ -16,5 +16,10 @@ public class Dolphin extends Animal{
     public String[] geteat() throws IllegalArgumentException {
         String[] eat={"plancton","pesci"};
         return eat;
+    }
+
+    @Override
+    public void nuotare() {
+        System.out.println("nuoto");
     }
 }

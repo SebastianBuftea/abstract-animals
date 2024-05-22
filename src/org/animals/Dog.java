@@ -1,6 +1,6 @@
 package org.animals;
 
-public class Dog  extends Animal{
+public class Dog  extends Animal implements Nuotare{
 
 
     public Dog(String name) {
@@ -17,5 +17,10 @@ public class Dog  extends Animal{
     public String[] geteat(){
         String[] eat={"ossi","crocchette","scatolette in umido"};
         return eat;
+    }
+
+    @Override
+    public void nuotare() {
+        System.out.println(" nuoto");
     }
 }

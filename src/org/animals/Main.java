@@ -14,6 +14,19 @@ public class Main {
             Animal.sleep();
             animalKingdom[i].makeNoise();
             System.out.println("Mangia: "+Arrays.toString(animalKingdom[i].geteat()));
+
+
+            if (animalKingdom[i] instanceof Volare) {
+                ((Volare) animalKingdom[i]).vola();
+            } else {
+                System.out.println(" non può volare!");
+            }
+
+            if (animalKingdom[i] instanceof Nuotare) {
+                ((Nuotare) animalKingdom[i]).nuotare();
+            } else {
+                System.out.println( " non può nuotare!");
+            }
             System.out.println(" ");
         }
     }
